@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="js/popper.js"></script>
+		<script type="text/javascript" src="js/jq.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title></title>
+	</head>
+	<style>
+		.top_one{
+			margin-top: 10rem;
+		}
+		.top_two{
+			margin-top: 1rem;
+		}
+		.bg {
+       		background-size:contain;
+		}
+		
+	</style>
+	<body class="bg" style="background-color: pink;">
+		<header class="topBar" style="height: 50px;">
+			<div class="container" style="background-color: white;">
+				<div class="row">
+					<div class="col-xs-2">
+						<a href="index.html" style="color: #000000;">
+							<span class="glyphicon glyphicon-chevron-left" style="font-size: 18px;"></span>
+						</a>
+					</div>
+					<div class="col-xs-8" style="text-align: center;">
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container " style="margin-top: -50px;">
+			<form class="form-horizontal" role="form" name="form1" action="">
+   			 	<div class="form-horizontal row top_one container"  role="form">
+   			 		<div class="form-group col-sm-10">	
+   			   			<label for="email" class="col-sm-2">电话号码:</label>
+   			   			<div class="col-sm-10 col-md-6">
+  			    			<input type="text" class="form-control" id="phone" placeholder="请输入电话号码" required="required" pattern="^1\d{10}$">
+ 						</div>
+   			 		</div>
+   			 		<div class="form-group col-sm-10">
+   			 		<label for="name1" class="col-sm-2">用户名：</label>
+   			 			<div class="col-sm-10 col-md-6">
+   			 				<input type="text"  class="form-control" placeholder="请输入不包含数字的用户名" required="required" pattern="^([\u4e00-\u9fa5]+|([a-z]+\s?)+)$"  id="name1"/>
+   			 			</div>
+   			 		</div>			 	
+ 			 		<div class="form-group col-sm-10">
+  			    		<label for="pwd" class="col-sm-2">密码:</label>
+    					<div class="col-sm-10 col-md-6"> 
+    						<input type="password" class="form-control" id="pwd" placeholder="请输入数字与字母的密码，长度不能低于6位" required="required" pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z\d]{6,16}$">
+    					</div>
+   			 		</div>	
+ 			 		<div class="form-group col-sm-10">
+  			    		<label for="pwd_two" class="col-sm-2">确认密码:</label>
+    					<div class="col-sm-10 col-md-6"> 
+    						<input type="password" class="form-control" id="pwd_two"   placeholder="请再次输入密码" required="required" pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z\d]{6,16}$">
+    					</div>
+   			 		</div>		
+ 				</div>
+ 			 	<!--<br />-->
+ 			 	<div class="col-sm-12">
+   					<button type="submit" id="submit" class="btn btn-primary top_two" style="width: 100%;" onclick="check()" >立即注册</button>   			
+ 			 	</div>
+  			</form>
+  		</div>
+	</body>
+	<script>
+		function check() {			
+			var pwd1=document.getElementById("pwd").value;
+			var pwd2=document.getElementById("pwd_two").value;
+			var ss=false;
+			if(pwd1 != pwd2) {
+                  alert("两次输入的密码不同，请重新输入");
+                  document.getElementById("submit").disabled = false;
+                   ss=2;
+              }
+              else if((pwd1=="")||(pwd1==null)){
+              	alert("请输入密码！");
+              	 form1.pwd.focus();
+              	ss=1;
+              }else{
+              	ss=2;
+              };
+              
+              if(pwd1 == pwd2) {
+              	ss=2;
+              };
+              
+             if((name1=="")||(name1==null)){
+              	alert("请输入用户名！");
+              	 form1.pwd.focus();
+              	ss=1;
+              }else{
+              	ss=2;
+              }
+              
+             if (ss = true) {
+             	
+             }else{
+             	 window.location.href = "http://www.baidu.com";
+             }
+          }
+		
+	</script>
+</html>

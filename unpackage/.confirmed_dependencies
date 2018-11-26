@@ -1,0 +1,121 @@
+{
+  "index.html": {
+    "resources": [
+      "css/docs.min.css",
+      "img/n­þ1.jpg",
+      "img/n­þ2.jpg",
+      "js/jquery.min.js",
+      "img/n­þ3.jpg",
+      "img/22.jpeg",
+      "img/11.jpg",
+      "img/†ãô.jpg",
+      "img/¾	þ1.jpeg",
+      "css/sangepic.css",
+      "css/bootstrap.min.css",
+      "fonts/glyphicons-halflings-regular.woff2",
+      "img/33.jpg",
+      "css/bootstrap.css",
+      "js/jquery-1.11.0.js",
+      "img/44.jpg",
+      "js/bootstrap.js",
+      "img/¾	þ3.jpeg",
+      "img/¾	þ2.jpg",
+      "list.html",
+      "ShopHouse.html",
+      "Login.html",
+      "Register.html",
+      "img/ljgd.jpg",
+      "img/lbt2.jpg",
+      "img/jxt2.jpg",
+      "img/jxt3.jpeg",
+      "img/lbt3.jpg",
+      "img/lbt1.jpg",
+      "img/jxt1.jpeg",
+      "shop.html",
+      "img/nýý1.jpg",
+      "img/nýý2.jpg",
+      "img/nýý3.jpg",
+      "img/ýýý\u001a.jpg",
+      "img/ý\tý1.jpeg",
+      "img/ý\tý3.jpeg",
+      "img/ý\tý2.jpg"
+    ],
+    "refer": [
+      "list.html",
+      "ShopHouse.html",
+      "Login.html",
+      "Register.html",
+      "shop.html"
+    ]
+  },
+  "list.html": {
+    "resources": [
+      "css/docs.min.css",
+      "css/bootstrap.css",
+      "img/east-ep-a91-6690476.jpg",
+      "img/6.jpg",
+      "js/bootstrap.min.js",
+      "img/251-2590.jpg",
+      "img/333.jpg",
+      "css/bootstrap.min.css",
+      "css/sangepic.css",
+      "Login.html",
+      "shop.html",
+      "ShopHouse.html",
+      "index.html"
+    ],
+    "refer": [
+      "Login.html",
+      "shop.html",
+      "ShopHouse.html",
+      "index.html"
+    ]
+  },
+  "Login.html": {
+    "resources": [
+      "index.html",
+      "css/bootstrap.min.css",
+      "Login.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "ShopHouse.html": {
+    "resources": [
+      "css/docs.min.css",
+      "index.html",
+      "css/bootstrap.css",
+      "css/bootstrap.min.css",
+      "Login.html",
+      "css/sangepic.css"
+    ],
+    "refer": [
+      "index.html",
+      "Login.html"
+    ]
+  },
+  "shop.html": {
+    "resources": [
+      "img/01570e59e07fbba80121ae0c452199.jpg@1280w_1l_2o_100sh.png",
+      "index.html",
+      "css/docs.min.css",
+      "css/bootstrap.css",
+      "css/bootstrap.min.css",
+      "js/bootstrap.min.js",
+      "css/sangepic.css"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "Register.html": {
+    "resources": [
+      "index.html",
+      "css/bootstrap.min.css"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}
